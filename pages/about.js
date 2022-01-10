@@ -1,11 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import React from "react";
 
-export default function Home() {
+function about() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>About</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -20,3 +18,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default about;
