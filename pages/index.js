@@ -1,12 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>
+      <h1 className={styles.title}>Home Page</h1>
+      <p className={styles.text}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -17,6 +20,11 @@ export default function Home() {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
+      <Link href="/books">
+        <a className={styles.btn}>Books List</a>
+      </Link>
     </div>
   );
-}
+};
+
+export default Home;
