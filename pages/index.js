@@ -24,7 +24,7 @@ const Home = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <Link href="/books">
+        <Link href="/users">
           <a className={styles.btn}>Users List</a>
         </Link>
       </div>
